@@ -1,0 +1,16 @@
+[package]
+name = "conformance-impl"
+version = "0.2.0"
+edition = "2018"
+
+authors = ["cad97 <cad97@cad97.com>"]
+description = "Implementation detail of conformance"
+repository = "https://github.com/CAD97/conformance"
+
+[dependencies]
+glob = "0.3.0"
+proc-macro2 = "1.0.6"
+quote = "1.0.2"
+runtime = { path = "../runtime", package = "conformance-runtime", version = "=0.2.0" }
+syn = { version = "1.0.7", features = ["full"] }
+simple-interner = "0.2.0"

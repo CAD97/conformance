@@ -1,0 +1,27 @@
+[workspace]
+members = [
+    "crates/impl",
+    "crates/macros",
+    "crates/runtime",
+]
+
+[package]
+name = "conformance"
+version = "0.2.0"
+edition = "2018"
+
+authors = ["cad97 <cad97@cad97.com>"]
+description = "Conformance testing for fn(&str) -> impl Serialize"
+
+repository = "https://github.com/CAD97/conformance"
+readme = "README.md"
+keywords = ["testing", "conformance", "serde"]
+categories = ["development-tools::testing"]
+license = "MIT OR Apachie-2.0"
+
+[dependencies]
+macros = { path = "crates/macros", package = "conformance-macros", version = "=0.2.0" }
+runtime = { path = "crates/runtime", package = "conformance-runtime", version = "=0.2.0" }
+
+[dev-dependencies]
+yaml = { package = "serde_yaml", version = "0.8.11" }

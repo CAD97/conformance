@@ -1,0 +1,44 @@
+=========
+localhost
+The loopback address
+=========
+::1
+=========
+Ok: "::1"
+=========
+
+============
+full address
+Examples from Wikipedia
+============
+2001:0db8:85a3:0000:0000:8a2e:0370:7334
+============
+Ok: "2001:db8:85a3::8a2e:370:7334"
+============
+
+============
+without leading zeros
+Each group must retain at least one hexadecimal digit
+============
+2001:db8:85a3:0:0:8a2e:370:7334
+============
+Ok: "2001:db8:85a3::8a2e:370:7334"
+============
+
+===========
+empty group
+Fill the sections with zeros
+===========
+2001:db8:85a3::8a2e:370:7334
+===========
+Ok: "2001:db8:85a3::8a2e:370:7334"
+===========
+
+====================
+multiple empty group
+This is ambiguous and disallowed
+====================
+dead::beef::babe
+====================
+Err: invalid IP address syntax
+====================

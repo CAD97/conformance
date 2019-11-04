@@ -1,0 +1,11 @@
+[package]
+name = "conformance-runtime"
+version = "0.2.0"
+edition = "2018"
+
+authors = ["cad97 <cad97@cad97.com>"]
+description = "Implementation detail of conformance"
+repository = "https://github.com/CAD97/conformance"
+
+[dependencies]
+nom = "5.0.1"

@@ -1,0 +1,18 @@
+[package]
+name = "conformance-macros"
+version = "0.2.0"
+edition = "2018"
+
+authors = ["cad97 <cad97@cad97.com>"]
+description = "Implementation detail of conformance"
+repository = "https://github.com/CAD97/conformance"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+imp = { path = "../impl", package = "conformance-impl", version = "=0.2.0" }
+proc-macro2 = "1.0.6"
+quote = "1.0.2"
+syn = "1.0.7"
+proc-macro-crate = "0.1.4"
